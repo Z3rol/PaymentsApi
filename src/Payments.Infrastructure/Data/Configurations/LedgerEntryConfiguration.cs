@@ -10,7 +10,7 @@ public class LedgerEntryConfiguration : IEntityTypeConfiguration<LedgerEntry>
     {
         builder.HasKey(e => e.Id);
 
-        builder.Property(e => e.Account).HasPrecision(18, 2);
+        builder.Property(e => e.Amount).HasPrecision(18, 2);
 
         builder.HasIndex(e => e.AccountId);
 
